@@ -1,0 +1,46 @@
+2025-06-01 19:50:02,793 - financial_news.data_loader - ERROR - Failed to load data: Can only use .dt accessor with datetimelike values
+2025-06-01 19:52:49,991 - financial_news.data_loader - ERROR - Failed to load data: Can only use .dt accessor with datetimelike values
+2025-06-01 19:54:43,889 - financial_news.data_loader - ERROR - Failed to load data: Can only use .dt accessor with datetimelike values
+2025-06-01 19:58:54,889 - financial_news.data_loader - INFO - Attempting to load news data from: ../data/raw_analyst_ratings.csv
+2025-06-01 19:59:02,674 - financial_news.data_loader - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-01 19:59:02,676 - financial_news.data_loader - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-01 19:59:02,692 - financial_news.data_loader - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-01 19:59:02,694 - financial_news.data_loader - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-01 19:59:03,366 - financial_news.data_loader - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-01 19:59:03,370 - financial_news.data_loader - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-01 19:59:03,374 - financial_news.data_loader - INFO - Starting preprocessing of news data...
+2025-06-01 19:59:03,375 - financial_news.data_loader - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-01 19:59:04,084 - financial_news.data_loader - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-01 19:59:04,204 - financial_news.data_loader - INFO - Temporal features extracted successfully.
+2025-06-01 19:59:04,205 - financial_news.data_loader - INFO - Preprocessing of news data finished.
+2025-06-01 19:59:04,206 - financial_news.data_loader - INFO - Successfully loaded and preprocessed 1407328 news records from ../data/raw_analyst_ratings.csv
+2025-06-01 20:02:47,939 - financial_news.data_loader - INFO - Attempting to load news data from: ../data/raw_analyst_ratings.csv
+2025-06-01 20:02:56,334 - financial_news.data_loader - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-01 20:02:56,336 - financial_news.data_loader - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-01 20:02:56,338 - financial_news.data_loader - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-01 20:02:56,341 - financial_news.data_loader - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-01 20:02:57,121 - financial_news.data_loader - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-01 20:02:57,123 - financial_news.data_loader - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-01 20:02:57,127 - financial_news.data_loader - INFO - Starting preprocessing of news data...
+2025-06-01 20:02:57,129 - financial_news.data_loader - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-01 20:02:57,742 - financial_news.data_loader - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-01 20:02:57,870 - financial_news.data_loader - INFO - Temporal features extracted successfully.
+2025-06-01 20:02:57,871 - financial_news.data_loader - INFO - Preprocessing of news data finished.
+2025-06-01 20:02:57,873 - financial_news.data_loader - INFO - Successfully loaded and preprocessed 1407328 news records from ../data/raw_analyst_ratings.csv
+2025-06-01 20:05:26,575 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-01 20:05:26,589 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-01 20:14:02,115 - financial_news.data_loader - INFO - Attempting to load news data from: ../data/raw_analyst_ratings.csv
+2025-06-01 20:14:09,618 - financial_news.data_loader - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-01 20:14:09,621 - financial_news.data_loader - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-01 20:14:09,622 - financial_news.data_loader - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-01 20:14:09,623 - financial_news.data_loader - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-01 20:14:10,283 - financial_news.data_loader - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-01 20:14:10,284 - financial_news.data_loader - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-01 20:14:10,288 - financial_news.data_loader - INFO - Starting preprocessing of news data...
+2025-06-01 20:14:10,289 - financial_news.data_loader - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-01 20:14:10,952 - financial_news.data_loader - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-01 20:14:11,155 - financial_news.data_loader - INFO - Temporal features extracted successfully.
+2025-06-01 20:14:11,156 - financial_news.data_loader - INFO - Preprocessing of news data finished.
+2025-06-01 20:14:11,157 - financial_news.data_loader - INFO - Successfully loaded and preprocessed 1407328 news records from ../data/raw_analyst_ratings.csv
+2025-06-01 20:14:31,567 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-01 20:14:31,574 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.

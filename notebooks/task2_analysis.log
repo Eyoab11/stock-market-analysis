@@ -1,1 +1,576 @@
 2025-06-03 13:05:57,773 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:43:51,225 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:44:00,611 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 13:44:00,633 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:00,847 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 13:44:00,849 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 13:44:00,881 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:01,339 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 13:44:01,341 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 13:44:01,353 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:01,563 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 13:44:01,565 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 13:44:01,583 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:02,162 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 13:44:02,165 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 13:44:02,183 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:02,611 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 13:44:02,613 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 13:44:02,641 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:03,462 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 13:44:03,464 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 13:44:03,489 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:44:04,199 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 13:44:04,201 - INFO - Loaded data for 7 stocks: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 13:44:08,997 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:44:08,999 - INFO - Attempting to load news data from: d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:44:16,211 - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 13:44:16,212 - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-03 13:44:16,212 - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-03 13:44:16,213 - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-03 13:44:16,765 - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-03 13:44:16,766 - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-03 13:44:16,768 - INFO - Starting preprocessing of news data...
+2025-06-03 13:44:16,768 - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-03 13:44:17,325 - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-03 13:44:17,485 - INFO - Temporal features extracted successfully.
+2025-06-03 13:44:17,485 - INFO - Preprocessing of news data finished.
+2025-06-03 13:44:17,485 - INFO - Successfully loaded and preprocessed 1407328 news records from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:44:17,542 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 13:44:17,691 - INFO - Processing TSLA
+2025-06-03 13:44:17,693 - ERROR - Error processing TSLA: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,694 - INFO - Processing NVDA
+2025-06-03 13:44:17,696 - ERROR - Error processing NVDA: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,698 - INFO - Processing META
+2025-06-03 13:44:17,699 - ERROR - Error processing META: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,700 - INFO - Processing AMZN
+2025-06-03 13:44:17,702 - ERROR - Error processing AMZN: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,703 - INFO - Processing GOOG
+2025-06-03 13:44:17,705 - ERROR - Error processing GOOG: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,706 - INFO - Processing AAPL
+2025-06-03 13:44:17,708 - ERROR - Error processing AAPL: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:17,709 - INFO - Processing MSFT
+2025-06-03 13:44:17,710 - ERROR - Error processing MSFT: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:44:24,829 - INFO - Task 2 completed. Plots in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\Plots-task2
+2025-06-03 13:52:23,006 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:53:06,195 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 13:53:06,217 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:06,432 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 13:53:06,436 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 13:53:06,465 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:06,914 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 13:53:06,916 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 13:53:06,929 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:07,142 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 13:53:07,144 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 13:53:07,164 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:07,727 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 13:53:07,730 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 13:53:07,749 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:08,108 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 13:53:08,111 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 13:53:08,136 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:08,849 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 13:53:08,851 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 13:53:08,875 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:53:09,590 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 13:53:09,593 - INFO - Loaded data for 7 stocks: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 13:53:29,111 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:53:29,117 - INFO - Attempting to load news data from: d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:53:36,698 - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 13:53:36,699 - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-03 13:53:36,699 - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-03 13:53:36,699 - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-03 13:53:37,322 - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-03 13:53:37,323 - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-03 13:53:37,327 - INFO - Starting preprocessing of news data...
+2025-06-03 13:53:37,327 - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-03 13:53:37,991 - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-03 13:53:38,158 - INFO - Temporal features extracted successfully.
+2025-06-03 13:53:38,158 - INFO - Preprocessing of news data finished.
+2025-06-03 13:53:38,158 - INFO - Successfully loaded and preprocessed 1407328 news records from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:53:38,230 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 13:53:38,371 - INFO - Processing TSLA
+2025-06-03 13:53:38,375 - ERROR - Error processing TSLA: input array has wrong dimensions
+2025-06-03 13:53:38,377 - INFO - Processing NVDA
+2025-06-03 13:53:38,380 - ERROR - Error processing NVDA: input array has wrong dimensions
+2025-06-03 13:53:38,382 - INFO - Processing META
+2025-06-03 13:53:38,384 - ERROR - Error processing META: input array has wrong dimensions
+2025-06-03 13:53:38,386 - INFO - Processing AMZN
+2025-06-03 13:53:38,390 - ERROR - Error processing AMZN: input array has wrong dimensions
+2025-06-03 13:53:38,392 - INFO - Processing GOOG
+2025-06-03 13:53:38,394 - ERROR - Error processing GOOG: input array has wrong dimensions
+2025-06-03 13:53:38,396 - INFO - Processing AAPL
+2025-06-03 13:53:38,400 - ERROR - Error processing AAPL: input array has wrong dimensions
+2025-06-03 13:53:38,403 - INFO - Processing MSFT
+2025-06-03 13:53:38,406 - ERROR - Error processing MSFT: input array has wrong dimensions
+2025-06-03 13:56:42,192 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:56:42,195 - INFO - Attempting to load news data from: d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:56:49,909 - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 13:56:49,911 - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-03 13:56:49,912 - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-03 13:56:49,912 - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-03 13:56:50,582 - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-03 13:56:50,584 - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-03 13:56:50,588 - INFO - Starting preprocessing of news data...
+2025-06-03 13:56:50,588 - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-03 13:56:51,284 - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-03 13:56:51,473 - INFO - Temporal features extracted successfully.
+2025-06-03 13:56:51,473 - INFO - Preprocessing of news data finished.
+2025-06-03 13:56:51,473 - INFO - Successfully loaded and preprocessed 1407328 news records from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:56:51,559 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 13:56:51,736 - INFO - Processing TSLA
+2025-06-03 13:56:51,740 - ERROR - Error processing TSLA: input array has wrong dimensions
+2025-06-03 13:56:51,743 - INFO - Processing NVDA
+2025-06-03 13:56:51,747 - ERROR - Error processing NVDA: input array has wrong dimensions
+2025-06-03 13:56:51,748 - INFO - Processing META
+2025-06-03 13:56:51,752 - ERROR - Error processing META: input array has wrong dimensions
+2025-06-03 13:56:51,757 - INFO - Processing AMZN
+2025-06-03 13:56:51,762 - ERROR - Error processing AMZN: input array has wrong dimensions
+2025-06-03 13:56:51,765 - INFO - Processing GOOG
+2025-06-03 13:56:51,771 - ERROR - Error processing GOOG: input array has wrong dimensions
+2025-06-03 13:56:51,775 - INFO - Processing AAPL
+2025-06-03 13:56:51,778 - ERROR - Error processing AAPL: input array has wrong dimensions
+2025-06-03 13:56:51,780 - INFO - Processing MSFT
+2025-06-03 13:56:51,783 - ERROR - Error processing MSFT: input array has wrong dimensions
+2025-06-03 13:59:43,316 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 13:59:43,336 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:43,588 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 13:59:43,590 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 13:59:43,618 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:44,079 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 13:59:44,083 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 13:59:44,096 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:44,298 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 13:59:44,301 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 13:59:44,320 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:44,924 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 13:59:44,926 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 13:59:44,941 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:45,320 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 13:59:45,323 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 13:59:45,353 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:46,131 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 13:59:46,133 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 13:59:46,155 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:59:46,887 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 13:59:46,889 - INFO - Loaded data for 7 stocks: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 14:00:10,815 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 14:00:18,874 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 14:00:19,020 - INFO - Processing TSLA
+2025-06-03 14:00:19,024 - ERROR - Error processing TSLA: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,029 - INFO - Processing NVDA
+2025-06-03 14:00:19,032 - ERROR - Error processing NVDA: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,035 - INFO - Processing META
+2025-06-03 14:00:19,038 - ERROR - Error processing META: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,040 - INFO - Processing AMZN
+2025-06-03 14:00:19,043 - ERROR - Error processing AMZN: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,046 - INFO - Processing GOOG
+2025-06-03 14:00:19,048 - ERROR - Error processing GOOG: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,051 - INFO - Processing AAPL
+2025-06-03 14:00:19,053 - ERROR - Error processing AAPL: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 14:00:19,055 - INFO - Processing MSFT
+2025-06-03 14:00:19,058 - ERROR - Error processing MSFT: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1464418035.py", line 11, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:37,538 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 15:37:53,091 - INFO - Saved processed news data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 15:37:53,096 - INFO - Processing TSLA
+2025-06-03 15:37:53,102 - ERROR - Error processing TSLA: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,104 - INFO - Processing NVDA
+2025-06-03 15:37:53,107 - ERROR - Error processing NVDA: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,110 - INFO - Processing META
+2025-06-03 15:37:53,117 - ERROR - Error processing META: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,120 - INFO - Processing AMZN
+2025-06-03 15:37:53,124 - ERROR - Error processing AMZN: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,128 - INFO - Processing GOOG
+2025-06-03 15:37:53,132 - ERROR - Error processing GOOG: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,134 - INFO - Processing AAPL
+2025-06-03 15:37:53,138 - ERROR - Error processing AAPL: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:37:53,140 - INFO - Processing MSFT
+2025-06-03 15:37:53,145 - ERROR - Error processing MSFT: input array has wrong dimensions
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\1591067256.py", line 19, in <module>
+    df['SMA_20'] = talib.SMA(close_prices, timeperiod=20)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\talib\__init__.py", line 80, in wrapper
+    result = func(*_args, **_kwds)
+  File "talib\\_func.pxi", line 4638, in talib._ta_lib.SMA
+  File "talib\\_func.pxi", line 24, in talib._ta_lib.check_array
+Exception: input array has wrong dimensions
+2025-06-03 15:40:26,724 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 15:40:26,769 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:26,780 - INFO - First few rows of TSLA:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  2010-06-29  1.266667  1.666667  1.169333  1.592667   1.592667  281494500        0.0           0.0
+1  2010-06-30  1.719333  2.028000  1.553333  1.588667   1.588667  257806500        0.0           0.0
+2  2010-07-01  1.666667  1.728000  1.351333  1.464000   1.464000  123282000        0.0           0.0
+3  2010-07-02  1.533333  1.540000  1.247333  1.280000   1.280000   77097000        0.0           0.0
+4  2010-07-06  1.333333  1.333333  1.055333  1.074000   1.074000  103003500        0.0           0.0
+2025-06-03 15:40:26,791 - ERROR - Error loading TSLA: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:26,859 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 15:40:26,895 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:26,900 - INFO - First few rows of NVDA:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1999-01-22  0.043750  0.048828  0.038802  0.041016   0.037621  2714688000        0.0           0.0
+1  1999-01-25  0.044271  0.045833  0.041016  0.045313   0.041562   510480000        0.0           0.0
+2  1999-01-26  0.045833  0.046745  0.041146  0.041797   0.038337   343200000        0.0           0.0
+3  1999-01-27  0.041927  0.042969  0.039583  0.041667   0.038218   244368000        0.0           0.0
+4  1999-01-28  0.041667  0.041927  0.041276  0.041536   0.038098   227520000        0.0           0.0
+2025-06-03 15:40:26,910 - ERROR - Error loading NVDA: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:26,914 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 15:40:26,946 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:26,952 - INFO - First few rows of META:
+         Date       Open       High        Low      Close  Adj Close    Volume  Dividends  Stock Splits
+0  2012-12-12  28.000000  28.139999  27.370001  27.580000  27.523441  46704200        0.0           0.0
+1  2012-12-13  27.590000  28.750000  27.430000  28.240000  28.182087  81051600        0.0           0.0
+2  2012-12-14  28.180000  28.330000  26.760000  26.809999  26.755020  91631600        0.0           0.0
+3  2012-12-17  26.770000  27.000000  26.320000  26.750000  26.695143  57742500        0.0           0.0
+4  2012-12-18  26.959999  27.910000  26.900000  27.709999  27.653173  60512900        0.0           0.0
+2025-06-03 15:40:26,963 - ERROR - Error loading META: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:26,966 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 15:40:27,002 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:27,008 - INFO - First few rows of AMZN:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1997-05-15  0.121875  0.125000  0.096354  0.097917   0.097917  1443120000        0.0           0.0
+1  1997-05-16  0.098438  0.098958  0.085417  0.086458   0.086458   294000000        0.0           0.0
+2  1997-05-19  0.088021  0.088542  0.081250  0.085417   0.085417   122136000        0.0           0.0
+3  1997-05-20  0.086458  0.087500  0.081771  0.081771   0.081771   109344000        0.0           0.0
+4  1997-05-21  0.081771  0.082292  0.068750  0.071354   0.071354   377064000        0.0           0.0
+2025-06-03 15:40:27,019 - ERROR - Error loading AMZN: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:27,022 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 15:40:27,060 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:27,065 - INFO - First few rows of GOOG:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  2004-08-19  2.490664  2.591785  2.390042  2.499133   2.496292  897427216        0.0           0.0
+1  2004-08-20  2.515820  2.716817  2.503118  2.697639   2.694573  458857488        0.0           0.0
+2  2004-08-23  2.758411  2.826406  2.716070  2.724787   2.721690  366857939        0.0           0.0
+3  2004-08-24  2.770615  2.779581  2.579581  2.611960   2.608991  306396159        0.0           0.0
+4  2004-08-25  2.614201  2.689918  2.587302  2.640104   2.637103  184645512        0.0           0.0
+2025-06-03 15:40:27,103 - ERROR - Error loading GOOG: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:27,108 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 15:40:27,155 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:27,163 - INFO - First few rows of AAPL:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  1980-12-12  0.128348  0.128906  0.128348  0.128348   0.098943  469033600        0.0           0.0
+1  1980-12-15  0.122210  0.122210  0.121652  0.121652   0.093781  175884800        0.0           0.0
+2  1980-12-16  0.113281  0.113281  0.112723  0.112723   0.086898  105728000        0.0           0.0
+3  1980-12-17  0.115513  0.116071  0.115513  0.115513   0.089049   86441600        0.0           0.0
+4  1980-12-18  0.118862  0.119420  0.118862  0.118862   0.091630   73449600        0.0           0.0
+2025-06-03 15:40:27,175 - ERROR - Error loading AAPL: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:27,178 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 15:40:27,215 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:40:27,220 - INFO - First few rows of MSFT:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1986-03-13  0.088542  0.101563  0.088542  0.097222   0.059946  1031788800        0.0           0.0
+1  1986-03-14  0.097222  0.102431  0.097222  0.100694   0.062087   308160000        0.0           0.0
+2  1986-03-17  0.100694  0.103299  0.100694  0.102431   0.063158   133171200        0.0           0.0
+3  1986-03-18  0.102431  0.103299  0.098958  0.099826   0.061552    67766400        0.0           0.0
+4  1986-03-19  0.099826  0.100694  0.097222  0.098090   0.060482    47894400        0.0           0.0
+2025-06-03 15:40:27,233 - ERROR - Error loading MSFT: 'DataFrame' object has no attribute 'dtype'
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_22596\3714311694.py", line 59, in load_stock_data
+    logger.info("Close column dtype: %s", df['Close'].dtype)
+                                          ^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'dtype'. Did you mean: 'dtypes'?
+2025-06-03 15:40:27,236 - ERROR - No stock data loaded. Exiting.
+2025-06-03 15:40:27,237 - INFO - Loaded data for 0 stocks: []
+2025-06-03 15:40:27,239 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 15:40:34,205 - INFO - Columns in news data: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 15:40:37,038 - INFO - Saved processed news data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 15:42:38,384 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 15:42:38,413 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:38,425 - INFO - First few rows of TSLA:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  2010-06-29  1.266667  1.666667  1.169333  1.592667   1.592667  281494500        0.0           0.0
+1  2010-06-30  1.719333  2.028000  1.553333  1.588667   1.588667  257806500        0.0           0.0
+2  2010-07-01  1.666667  1.728000  1.351333  1.464000   1.464000  123282000        0.0           0.0
+3  2010-07-02  1.533333  1.540000  1.247333  1.280000   1.280000   77097000        0.0           0.0
+4  2010-07-06  1.333333  1.333333  1.055333  1.074000   1.074000  103003500        0.0           0.0
+2025-06-03 15:42:38,446 - INFO - Close column dtype: float64
+2025-06-03 15:42:38,450 - INFO - Close column shape: (3545,)
+2025-06-03 15:42:38,454 - INFO - Close column sample: [1.5926669836044312, 1.5886670351028442, 1.4639999866485596, 1.2799999713897705, 1.0740000009536743]
+2025-06-03 15:42:38,828 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 15:42:38,831 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 15:42:38,866 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:38,875 - INFO - First few rows of NVDA:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1999-01-22  0.043750  0.048828  0.038802  0.041016   0.037621  2714688000        0.0           0.0
+1  1999-01-25  0.044271  0.045833  0.041016  0.045313   0.041562   510480000        0.0           0.0
+2  1999-01-26  0.045833  0.046745  0.041146  0.041797   0.038337   343200000        0.0           0.0
+3  1999-01-27  0.041927  0.042969  0.039583  0.041667   0.038218   244368000        0.0           0.0
+4  1999-01-28  0.041667  0.041927  0.041276  0.041536   0.038098   227520000        0.0           0.0
+2025-06-03 15:42:38,896 - INFO - Close column dtype: float64
+2025-06-03 15:42:38,900 - INFO - Close column shape: (6421,)
+2025-06-03 15:42:38,903 - INFO - Close column sample: [0.0410160012543201, 0.0453130006790161, 0.041797000914812, 0.0416669994592666, 0.0415359996259212]
+2025-06-03 15:42:39,365 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 15:42:39,367 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 15:42:39,381 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:39,387 - INFO - First few rows of META:
+         Date       Open       High        Low      Close  Adj Close    Volume  Dividends  Stock Splits
+0  2012-12-12  28.000000  28.139999  27.370001  27.580000  27.523441  46704200        0.0           0.0
+1  2012-12-13  27.590000  28.750000  27.430000  28.240000  28.182087  81051600        0.0           0.0
+2  2012-12-14  28.180000  28.330000  26.760000  26.809999  26.755020  91631600        0.0           0.0
+3  2012-12-17  26.770000  27.000000  26.320000  26.750000  26.695143  57742500        0.0           0.0
+4  2012-12-18  26.959999  27.910000  26.900000  27.709999  27.653173  60512900        0.0           0.0
+2025-06-03 15:42:39,401 - INFO - Close column dtype: float64
+2025-06-03 15:42:39,404 - INFO - Close column shape: (2926,)
+2025-06-03 15:42:39,406 - INFO - Close column sample: [27.57999992370605, 28.239999771118164, 26.809999465942383, 26.75, 27.709999084472656]
+2025-06-03 15:42:39,573 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 15:42:39,575 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 15:42:39,594 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:39,600 - INFO - First few rows of AMZN:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1997-05-15  0.121875  0.125000  0.096354  0.097917   0.097917  1443120000        0.0           0.0
+1  1997-05-16  0.098438  0.098958  0.085417  0.086458   0.086458   294000000        0.0           0.0
+2  1997-05-19  0.088021  0.088542  0.081250  0.085417   0.085417   122136000        0.0           0.0
+3  1997-05-20  0.086458  0.087500  0.081771  0.081771   0.081771   109344000        0.0           0.0
+4  1997-05-21  0.081771  0.082292  0.068750  0.071354   0.071354   377064000        0.0           0.0
+2025-06-03 15:42:39,613 - INFO - Close column dtype: float64
+2025-06-03 15:42:39,615 - INFO - Close column shape: (6846,)
+2025-06-03 15:42:39,617 - INFO - Close column sample: [0.0979169979691505, 0.0864579975605011, 0.0854170024394989, 0.0817710012197494, 0.0713540017604827]
+2025-06-03 15:42:40,093 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 15:42:40,095 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 15:42:40,118 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:40,126 - INFO - First few rows of GOOG:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  2004-08-19  2.490664  2.591785  2.390042  2.499133   2.496292  897427216        0.0           0.0
+1  2004-08-20  2.515820  2.716817  2.503118  2.697639   2.694573  458857488        0.0           0.0
+2  2004-08-23  2.758411  2.826406  2.716070  2.724787   2.721690  366857939        0.0           0.0
+3  2004-08-24  2.770615  2.779581  2.579581  2.611960   2.608991  306396159        0.0           0.0
+4  2004-08-25  2.614201  2.689918  2.587302  2.640104   2.637103  184645512        0.0           0.0
+2025-06-03 15:42:40,138 - INFO - Close column dtype: float64
+2025-06-03 15:42:40,139 - INFO - Close column shape: (5020,)
+2025-06-03 15:42:40,141 - INFO - Close column sample: [2.4991331100463867, 2.697638988494873, 2.7247869968414307, 2.611959934234619, 2.640104055404663]
+2025-06-03 15:42:40,442 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 15:42:40,445 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 15:42:40,467 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:40,473 - INFO - First few rows of AAPL:
+         Date      Open      High       Low     Close  Adj Close     Volume  Dividends  Stock Splits
+0  1980-12-12  0.128348  0.128906  0.128348  0.128348   0.098943  469033600        0.0           0.0
+1  1980-12-15  0.122210  0.122210  0.121652  0.121652   0.093781  175884800        0.0           0.0
+2  1980-12-16  0.113281  0.113281  0.112723  0.112723   0.086898  105728000        0.0           0.0
+3  1980-12-17  0.115513  0.116071  0.115513  0.115513   0.089049   86441600        0.0           0.0
+4  1980-12-18  0.118862  0.119420  0.118862  0.118862   0.091630   73449600        0.0           0.0
+2025-06-03 15:42:40,486 - INFO - Close column dtype: float64
+2025-06-03 15:42:40,489 - INFO - Close column shape: (10998,)
+2025-06-03 15:42:40,490 - INFO - Close column sample: [0.1283479928970337, 0.1216519996523857, 0.1127230003476142, 0.1155129969120025, 0.1188620030879974]
+2025-06-03 15:42:41,144 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 15:42:41,146 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 15:42:41,169 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 15:42:41,175 - INFO - First few rows of MSFT:
+         Date      Open      High       Low     Close  Adj Close      Volume  Dividends  Stock Splits
+0  1986-03-13  0.088542  0.101563  0.088542  0.097222   0.059946  1031788800        0.0           0.0
+1  1986-03-14  0.097222  0.102431  0.097222  0.100694   0.062087   308160000        0.0           0.0
+2  1986-03-17  0.100694  0.103299  0.100694  0.102431   0.063158   133171200        0.0           0.0
+3  1986-03-18  0.102431  0.103299  0.098958  0.099826   0.061552    67766400        0.0           0.0
+4  1986-03-19  0.099826  0.100694  0.097222  0.098090   0.060482    47894400        0.0           0.0
+2025-06-03 15:42:41,188 - INFO - Close column dtype: float64
+2025-06-03 15:42:41,190 - INFO - Close column shape: (9672,)
+2025-06-03 15:42:41,192 - INFO - Close column sample: [0.0972220003604888, 0.1006940007209777, 0.1024309992790222, 0.0998260006308555, 0.0980900004506111]
+2025-06-03 15:42:41,807 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 15:42:41,810 - INFO - Loaded data for 7 stocks: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 15:43:06,234 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 15:43:14,446 - INFO - Columns in news data: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 15:43:17,535 - INFO - Saved processed news data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 15:43:17,545 - INFO - Processing TSLA
+2025-06-03 15:43:17,547 - INFO - close_prices shape: (3545,)
+2025-06-03 15:43:17,549 - INFO - close_prices dtype: float64
+2025-06-03 15:43:17,550 - INFO - close_prices sample: [1.5926669836044312, 1.5886670351028442, 1.4639999866485596, 1.2799999713897705, 1.0740000009536743]
+2025-06-03 15:43:17,901 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 15:43:23,800 - INFO - Processing NVDA
+2025-06-03 15:43:23,804 - INFO - close_prices shape: (6421,)
+2025-06-03 15:43:23,807 - INFO - close_prices dtype: float64
+2025-06-03 15:43:23,808 - INFO - close_prices sample: [0.0410160012543201, 0.0453130006790161, 0.041797000914812, 0.0416669994592666, 0.0415359996259212]
+2025-06-03 15:43:24,481 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 15:43:37,612 - INFO - Processing META
+2025-06-03 15:43:37,615 - INFO - close_prices shape: (2926,)
+2025-06-03 15:43:37,617 - INFO - close_prices dtype: float64
+2025-06-03 15:43:37,619 - INFO - close_prices sample: [27.57999992370605, 28.239999771118164, 26.809999465942383, 26.75, 27.709999084472656]
+2025-06-03 15:43:37,844 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 15:43:42,040 - INFO - Processing AMZN
+2025-06-03 15:43:42,043 - INFO - close_prices shape: (6846,)
+2025-06-03 15:43:42,045 - INFO - close_prices dtype: float64
+2025-06-03 15:43:42,047 - INFO - close_prices sample: [0.0979169979691505, 0.0864579975605011, 0.0854170024394989, 0.0817710012197494, 0.0713540017604827]
+2025-06-03 15:43:42,589 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 15:43:51,684 - INFO - Processing GOOG
+2025-06-03 15:43:51,688 - INFO - close_prices shape: (5020,)
+2025-06-03 15:43:51,691 - INFO - close_prices dtype: float64
+2025-06-03 15:43:51,693 - INFO - close_prices sample: [2.4991331100463867, 2.697638988494873, 2.7247869968414307, 2.611959934234619, 2.640104055404663]
+2025-06-03 15:43:52,152 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 15:43:58,455 - INFO - Processing AAPL
+2025-06-03 15:43:58,458 - INFO - close_prices shape: (10998,)
+2025-06-03 15:43:58,460 - INFO - close_prices dtype: float64
+2025-06-03 15:43:58,462 - INFO - close_prices sample: [0.1283479928970337, 0.1216519996523857, 0.1127230003476142, 0.1155129969120025, 0.1188620030879974]
+2025-06-03 15:43:59,697 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 15:44:22,861 - INFO - Processing MSFT
+2025-06-03 15:44:22,865 - INFO - close_prices shape: (9672,)
+2025-06-03 15:44:22,868 - INFO - close_prices dtype: float64
+2025-06-03 15:44:22,871 - INFO - close_prices sample: [0.0972220003604888, 0.1006940007209777, 0.1024309992790222, 0.0998260006308555, 0.0980900004506111]
+2025-06-03 15:44:23,977 - INFO - Saved indicators to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl

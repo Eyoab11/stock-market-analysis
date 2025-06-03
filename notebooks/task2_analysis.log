@@ -1,1 +1,103 @@
 2025-06-03 13:05:57,773 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:06:19,972 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:07:40,799 - INFO - Loading TSLA from ../data\TSLA_historical_data.csv
+2025-06-03 13:07:40,870 - ERROR - Missing columns in TSLA: ['Close']
+2025-06-03 13:07:40,871 - INFO - Loading NVDA from ../data\NVDA_historical_data.csv
+2025-06-03 13:07:40,917 - ERROR - Missing columns in NVDA: ['Close']
+2025-06-03 13:07:40,918 - INFO - Loading META from ../data\META_historical_data.csv
+2025-06-03 13:07:40,964 - ERROR - Missing columns in META: ['Close']
+2025-06-03 13:07:40,965 - INFO - Loading AMZN from ../data\AMZN_historical_data.csv
+2025-06-03 13:07:41,016 - ERROR - Missing columns in AMZN: ['Close']
+2025-06-03 13:07:41,016 - INFO - Loading GOOG from ../data\GOOG_historical_data.csv
+2025-06-03 13:07:41,068 - ERROR - Missing columns in GOOG: ['Close']
+2025-06-03 13:07:41,069 - INFO - Loading AAPL from ../data\AAPL_historical_data.csv
+2025-06-03 13:07:41,139 - ERROR - Missing columns in AAPL: ['Close']
+2025-06-03 13:07:41,139 - INFO - Loading MSFT from ../data\MSFT_historical_data.csv
+2025-06-03 13:07:41,203 - ERROR - Missing columns in MSFT: ['Close']
+2025-06-03 13:07:41,204 - ERROR - No stock data loaded. Exiting.
+2025-06-03 13:07:58,554 - INFO - Attempting to load news data from: ../data\raw_analyst_ratings.csv
+2025-06-03 13:08:07,391 - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 13:08:07,392 - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-03 13:08:07,392 - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-03 13:08:07,392 - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-03 13:08:08,010 - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-03 13:08:08,011 - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-03 13:08:08,013 - INFO - Starting preprocessing of news data...
+2025-06-03 13:08:08,013 - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-03 13:08:08,539 - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-03 13:08:08,661 - INFO - Temporal features extracted successfully.
+2025-06-03 13:08:08,661 - INFO - Preprocessing of news data finished.
+2025-06-03 13:08:08,661 - INFO - Successfully loaded and preprocessed 1407328 news records from ../data\raw_analyst_ratings.csv
+2025-06-03 13:08:08,728 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 13:08:14,003 - INFO - Task 2 completed. Plots saved in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\Plots-task2
+2025-06-03 13:10:38,146 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:11:18,065 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 13:11:18,101 - ERROR - Missing columns in TSLA: ['Close']
+2025-06-03 13:11:18,103 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 13:11:18,162 - ERROR - Missing columns in NVDA: ['Close']
+2025-06-03 13:11:18,165 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 13:11:18,206 - ERROR - Missing columns in META: ['Close']
+2025-06-03 13:11:18,209 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 13:11:18,274 - ERROR - Missing columns in AMZN: ['Close']
+2025-06-03 13:11:18,276 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 13:11:18,318 - ERROR - Missing columns in GOOG: ['Close']
+2025-06-03 13:11:18,320 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 13:11:18,372 - ERROR - Missing columns in AAPL: ['Close']
+2025-06-03 13:11:18,374 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 13:11:18,417 - ERROR - Missing columns in MSFT: ['Close']
+2025-06-03 13:11:18,419 - ERROR - No stock data loaded. Exiting.
+2025-06-03 13:11:18,421 - INFO - Loaded data for 0 stocks: []
+2025-06-03 13:14:39,213 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:14:46,456 - INFO - Starting Task 2: Technical Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 13:15:27,821 - INFO - Loading TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 13:15:27,838 - INFO - Columns in TSLA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:28,104 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 13:15:28,108 - INFO - Loading NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 13:15:28,132 - INFO - Columns in NVDA: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:28,718 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 13:15:28,721 - INFO - Loading META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 13:15:28,733 - INFO - Columns in META: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:28,993 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 13:15:28,997 - INFO - Loading AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 13:15:29,025 - INFO - Columns in AMZN: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:29,642 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 13:15:29,646 - INFO - Loading GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 13:15:29,662 - INFO - Columns in GOOG: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:30,049 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 13:15:30,053 - INFO - Loading AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 13:15:30,079 - INFO - Columns in AAPL: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:30,897 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 13:15:30,900 - INFO - Loading MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 13:15:30,921 - INFO - Columns in MSFT: ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'Stock Splits']
+2025-06-03 13:15:31,658 - INFO - Saved processed data to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 13:15:31,662 - INFO - Loaded data for 7 stocks: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 13:15:50,049 - INFO - Loading news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:15:50,055 - INFO - Attempting to load news data from: d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:15:58,757 - INFO - CSV loaded. Columns: ['Unnamed: 0', 'headline', 'url', 'publisher', 'date', 'stock']
+2025-06-03 13:15:58,758 - INFO - Initial 'date' column dtype before any conversion: object
+2025-06-03 13:15:58,758 - INFO - First 5 values of 'date' column (raw): ['2020-06-05 10:30:54-04:00', '2020-06-03 10:45:20-04:00', '2020-05-26 04:30:07-04:00', '2020-05-22 12:45:06-04:00', '2020-05-22 11:38:59-04:00']
+2025-06-03 13:15:58,759 - INFO - Attempting explicit pd.to_datetime on 'date' column (current dtype: object)
+2025-06-03 13:15:59,274 - INFO - After explicit pd.to_datetime, 'date' column dtype: datetime64[ns, UTC-04:00]
+2025-06-03 13:15:59,275 - INFO - First 5 values of 'date' column (after parse): [Timestamp('2020-06-05 10:30:54-0400', tz='UTC-04:00'), Timestamp('2020-06-03 10:45:20-0400', tz='UTC-04:00'), Timestamp('2020-05-26 04:30:07-0400', tz='UTC-04:00'), Timestamp('2020-05-22 12:45:06-0400', tz='UTC-04:00'), Timestamp('2020-05-22 11:38:59-0400', tz='UTC-04:00')]
+2025-06-03 13:15:59,278 - INFO - Starting preprocessing of news data...
+2025-06-03 13:15:59,279 - INFO - Inside _preprocess, 'date' column dtype IS: datetime64[ns, UTC-04:00]
+2025-06-03 13:15:59,945 - INFO - Attempting to extract temporal features (date_day, date_hour, date_weekday)...
+2025-06-03 13:16:00,146 - INFO - Temporal features extracted successfully.
+2025-06-03 13:16:00,147 - INFO - Preprocessing of news data finished.
+2025-06-03 13:16:00,147 - INFO - Successfully loaded and preprocessed 1407328 news records from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 13:16:00,227 - ERROR - Error loading news data: invalid literal for int() with base 10: '-'
+2025-06-03 13:16:00,370 - INFO - Processing TSLA
+2025-06-03 13:16:00,375 - ERROR - Error processing TSLA: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,378 - INFO - Processing NVDA
+2025-06-03 13:16:00,381 - ERROR - Error processing NVDA: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,383 - INFO - Processing META
+2025-06-03 13:16:00,386 - ERROR - Error processing META: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,388 - INFO - Processing AMZN
+2025-06-03 13:16:00,391 - ERROR - Error processing AMZN: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,397 - INFO - Processing GOOG
+2025-06-03 13:16:00,404 - ERROR - Error processing GOOG: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,406 - INFO - Processing AAPL
+2025-06-03 13:16:00,410 - ERROR - Error processing AAPL: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:00,414 - INFO - Processing MSFT
+2025-06-03 13:16:00,419 - ERROR - Error processing MSFT: Argument 'real' has incorrect type (expected numpy.ndarray, got DataFrame)
+2025-06-03 13:16:03,643 - INFO - Task 2 completed. Plots in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\Plots-task2

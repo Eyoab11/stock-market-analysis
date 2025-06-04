@@ -1,1 +1,828 @@
 2025-06-03 17:24:04,382 - INFO - Starting Task 3: Correlation Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 17:25:16,698 - INFO - Loading stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:25:16,742 - ERROR - Error loading TSLA: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:16,900 - INFO - Loading stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:25:16,931 - ERROR - Error loading NVDA: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:16,934 - INFO - Loading stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:25:16,960 - ERROR - Error loading META: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:16,963 - INFO - Loading stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:25:16,988 - ERROR - Error loading AMZN: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:16,991 - INFO - Loading stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:25:17,017 - ERROR - Error loading GOOG: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:17,020 - INFO - Loading stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:25:17,044 - ERROR - Error loading AAPL: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:17,049 - INFO - Loading stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:25:17,074 - ERROR - Error loading MSFT: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3944398963.py", line 11, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:17,077 - INFO - Loading news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:25:17,102 - ERROR - Error loading news data: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\519548619.py", line 6, in load_news_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:25:17,106 - ERROR - Failed to load news or stock data. Exiting.
+2025-06-03 17:25:17,108 - INFO - Loaded stock data for 0 symbols: []
+2025-06-03 17:25:17,110 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:27:09,575 - INFO - Starting Task 3: Correlation Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 17:28:07,815 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:28:07,820 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:07,825 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 17:28:07,850 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:07,856 - INFO - Falling back to CSV for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 17:28:07,896 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv. Sample returns: [nan, -0.0025114782580187844, -0.07847273575876412, -0.12568307167816883, -0.1609374805004331]
+2025-06-03 17:28:07,903 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:28:07,907 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:07,910 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 17:28:07,932 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:07,936 - INFO - Falling back to CSV for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 17:28:07,974 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv. Sample returns: [nan, 0.10476397730857312, -0.07759362018663041, -0.003110305828170734, -0.0031439708893237217]
+2025-06-03 17:28:07,979 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:28:07,983 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:07,986 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 17:28:08,009 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,014 - INFO - Falling back to CSV for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 17:28:08,037 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv. Sample returns: [nan, 0.023930378870117952, -0.050637404984623324, -0.0022379510308682127, 0.03588781624196846]
+2025-06-03 17:28:08,042 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:28:08,047 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,051 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 17:28:08,079 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,084 - INFO - Falling back to CSV for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 17:28:08,132 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv. Sample returns: [nan, -0.1170276933148997, -0.012040472256759527, -0.0426847245351647, -0.12739234329872395]
+2025-06-03 17:28:08,135 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:28:08,139 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,143 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 17:28:08,163 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,167 - INFO - Falling back to CSV for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 17:28:08,195 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv. Sample returns: [nan, 0.07942989417030355, 0.010063618023887111, -0.041407663328399846, 0.010775096815675678]
+2025-06-03 17:28:08,200 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:28:08,203 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,207 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 17:28:08,228 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,233 - INFO - Falling back to CSV for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 17:28:08,282 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv. Sample returns: [nan, -0.0521706112694712, -0.07339788355543386, 0.024750907585714632, 0.028992462021794507]
+2025-06-03 17:28:08,287 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:28:08,291 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,295 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 17:28:08,317 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,320 - INFO - Falling back to CSV for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 17:28:08,379 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv. Sample returns: [nan, 0.03571208520309299, 0.017250268592045703, -0.025431741040333633, -0.01739026074643546]
+2025-06-03 17:28:08,386 - INFO - Attempting to load news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:28:08,392 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3102218205.py", line 6, in load_news_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:28:08,399 - INFO - Falling back to CSV for news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 17:28:18,171 - ERROR - Error loading news CSV d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv: time data "2020-05-22 00:00:00" doesn't match format "%Y-%m-%d %H:%M:%S%z", at position 10. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3102218205.py", line 29, in load_news_data
+    df['date'] = pd.to_datetime(df['date'], utc=True).dt.tz_convert('US/Eastern').dt.normalize()
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\tools\datetimes.py", line 1063, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\tools\datetimes.py", line 247, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\tools\datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\core\tools\datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2020-05-22 00:00:00" doesn't match format "%Y-%m-%d %H:%M:%S%z", at position 10. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2025-06-03 17:28:18,376 - ERROR - Failed to load news or stock data. Exiting.
+2025-06-03 17:28:18,380 - INFO - Loaded stock data for 7 symbols: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 17:28:18,383 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:31:31,462 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:31:31,467 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,471 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 17:31:31,478 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,498 - INFO - Falling back to CSV for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 17:31:31,563 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv. Sample returns: [nan, -0.0025114782580187844, -0.07847273575876412, -0.12568307167816883, -0.1609374805004331]
+2025-06-03 17:31:31,570 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:31:31,592 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,598 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 17:31:31,602 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,608 - INFO - Falling back to CSV for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 17:31:31,676 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv. Sample returns: [nan, 0.10476397730857312, -0.07759362018663041, -0.003110305828170734, -0.0031439708893237217]
+2025-06-03 17:31:31,681 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:31:31,686 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,692 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 17:31:31,698 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,702 - INFO - Falling back to CSV for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 17:31:31,738 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv. Sample returns: [nan, 0.023930378870117952, -0.050637404984623324, -0.0022379510308682127, 0.03588781624196846]
+2025-06-03 17:31:31,743 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:31:31,747 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,750 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 17:31:31,753 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,758 - INFO - Falling back to CSV for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 17:31:31,801 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv. Sample returns: [nan, -0.1170276933148997, -0.012040472256759527, -0.0426847245351647, -0.12739234329872395]
+2025-06-03 17:31:31,806 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:31:31,811 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,815 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 17:31:31,818 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,823 - INFO - Falling back to CSV for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 17:31:31,858 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv. Sample returns: [nan, 0.07942989417030355, 0.010063618023887111, -0.041407663328399846, 0.010775096815675678]
+2025-06-03 17:31:31,862 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:31:31,866 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,870 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 17:31:31,874 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,878 - INFO - Falling back to CSV for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 17:31:31,927 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv. Sample returns: [nan, -0.0521706112694712, -0.07339788355543386, 0.024750907585714632, 0.028992462021794507]
+2025-06-03 17:31:31,933 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:31:31,936 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,939 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 17:31:31,943 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:31,947 - INFO - Falling back to CSV for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 17:31:31,997 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv. Sample returns: [nan, 0.03571208520309299, 0.017250268592045703, -0.025431741040333633, -0.01739026074643546]
+2025-06-03 17:31:32,003 - INFO - Attempting to load news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:31:32,007 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3052119950.py", line 8, in load_news_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:31:32,011 - INFO - Falling back to CSV for news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 17:31:41,610 - WARNING - Some dates could not be parsed in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Dropping invalid rows.
+2025-06-03 17:31:41,756 - INFO - Loaded news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Sample:
+   Unnamed: 0                                                                                 headline                                                                                                                                 url          publisher                      date stock
+0           0                                                  Stocks That Hit 52-Week Highs On Friday                                                https://www.benzinga.com/news/20/06/16190091/stocks-that-hit-52-week-highs-on-friday  Benzinga Insights 2020-06-05 00:00:00-04:00     A
+1           1                                               Stocks That Hit 52-Week Highs On Wednesday                                             https://www.benzinga.com/news/20/06/16170189/stocks-that-hit-52-week-highs-on-wednesday  Benzinga Insights 2020-06-03 00:00:00-04:00     A
+2           2                                                            71 Biggest Movers From Friday                                                          https://www.benzinga.com/news/20/05/16103463/71-biggest-movers-from-friday         Lisa Levin 2020-05-26 00:00:00-04:00     A
+3           3                                             46 Stocks Moving In Friday's Mid-Day Session                                            https://www.benzinga.com/news/20/05/16095921/46-stocks-moving-in-fridays-mid-day-session         Lisa Levin 2020-05-22 00:00:00-04:00     A
+4           4  B of A Securities Maintains Neutral on Agilent Technologies, Raises Price Target to $88  https://www.benzinga.com/news/20/05/16095304/b-of-a-securities-maintains-neutral-on-agilent-technologies-raises-price-target-to-88         Vick Meyer 2020-05-22 00:00:00-04:00     A
+2025-06-03 17:31:41,801 - INFO - Loaded stock data for 7 symbols: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 17:31:41,804 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:31:56,738 - INFO - Sentiment analysis completed. Sample sentiments:
+                                                                                  headline  sentiment
+0                                                  Stocks That Hit 52-Week Highs On Friday        0.0
+1                                               Stocks That Hit 52-Week Highs On Wednesday        0.0
+2                                                            71 Biggest Movers From Friday        0.0
+3                                             46 Stocks Moving In Friday's Mid-Day Session        0.0
+4  B of A Securities Maintains Neutral on Agilent Technologies, Raises Price Target to $88        0.0
+2025-06-03 17:31:56,832 - INFO - Aggregated daily sentiment scores:
+  stock       date  sentiment
+0     A 2020-05-22   0.035714
+1     A 2020-05-26   0.000000
+2     A 2020-06-03   0.000000
+3     A 2020-06-05   0.000000
+4    AA 2020-05-18   0.062500
+2025-06-03 17:32:09,343 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:32:09,347 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,350 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 17:32:09,353 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,355 - INFO - Falling back to CSV for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 17:32:09,378 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv. Sample returns: [nan, -0.0025114782580187844, -0.07847273575876412, -0.12568307167816883, -0.1609374805004331]
+2025-06-03 17:32:09,382 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:32:09,385 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,388 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 17:32:09,392 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,395 - INFO - Falling back to CSV for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 17:32:09,421 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv. Sample returns: [nan, 0.10476397730857312, -0.07759362018663041, -0.003110305828170734, -0.0031439708893237217]
+2025-06-03 17:32:09,426 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:32:09,429 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,432 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 17:32:09,434 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,436 - INFO - Falling back to CSV for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 17:32:09,454 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv. Sample returns: [nan, 0.023930378870117952, -0.050637404984623324, -0.0022379510308682127, 0.03588781624196846]
+2025-06-03 17:32:09,457 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:32:09,460 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,463 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 17:32:09,465 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,467 - INFO - Falling back to CSV for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 17:32:09,493 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv. Sample returns: [nan, -0.1170276933148997, -0.012040472256759527, -0.0426847245351647, -0.12739234329872395]
+2025-06-03 17:32:09,498 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:32:09,500 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,502 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 17:32:09,504 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,508 - INFO - Falling back to CSV for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 17:32:09,533 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv. Sample returns: [nan, 0.07942989417030355, 0.010063618023887111, -0.041407663328399846, 0.010775096815675678]
+2025-06-03 17:32:09,537 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:32:09,539 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,543 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 17:32:09,545 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,547 - INFO - Falling back to CSV for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 17:32:09,579 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv. Sample returns: [nan, -0.0521706112694712, -0.07339788355543386, 0.024750907585714632, 0.028992462021794507]
+2025-06-03 17:32:09,582 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:32:09,584 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,585 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 17:32:09,587 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\1426116515.py", line 9, in load_stock_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,590 - INFO - Falling back to CSV for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 17:32:09,617 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv. Sample returns: [nan, 0.03571208520309299, 0.017250268592045703, -0.025431741040333633, -0.01739026074643546]
+2025-06-03 17:32:09,620 - INFO - Attempting to load news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:32:09,621 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl: invalid load key, '\x1f'.
+Traceback (most recent call last):
+  File "C:\Users\Yoga i7\AppData\Local\Temp\ipykernel_16148\3052119950.py", line 8, in load_news_data
+    df = pd.read_pickle(pkl_path)
+  File "d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\venv\Lib\site-packages\pandas\io\pickle.py", line 202, in read_pickle
+    return pickle.load(handles.handle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\x1f'.
+2025-06-03 17:32:09,624 - INFO - Falling back to CSV for news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 17:32:17,951 - WARNING - Some dates could not be parsed in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Dropping invalid rows.
+2025-06-03 17:32:18,094 - INFO - Loaded news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Sample:
+   Unnamed: 0                                                                                 headline                                                                                                                                 url          publisher                      date stock
+0           0                                                  Stocks That Hit 52-Week Highs On Friday                                                https://www.benzinga.com/news/20/06/16190091/stocks-that-hit-52-week-highs-on-friday  Benzinga Insights 2020-06-05 00:00:00-04:00     A
+1           1                                               Stocks That Hit 52-Week Highs On Wednesday                                             https://www.benzinga.com/news/20/06/16170189/stocks-that-hit-52-week-highs-on-wednesday  Benzinga Insights 2020-06-03 00:00:00-04:00     A
+2           2                                                            71 Biggest Movers From Friday                                                          https://www.benzinga.com/news/20/05/16103463/71-biggest-movers-from-friday         Lisa Levin 2020-05-26 00:00:00-04:00     A
+3           3                                             46 Stocks Moving In Friday's Mid-Day Session                                            https://www.benzinga.com/news/20/05/16095921/46-stocks-moving-in-fridays-mid-day-session         Lisa Levin 2020-05-22 00:00:00-04:00     A
+4           4  B of A Securities Maintains Neutral on Agilent Technologies, Raises Price Target to $88  https://www.benzinga.com/news/20/05/16095304/b-of-a-securities-maintains-neutral-on-agilent-technologies-raises-price-target-to-88         Vick Meyer 2020-05-22 00:00:00-04:00     A
+2025-06-03 17:32:18,121 - INFO - Loaded stock data for 7 symbols: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 17:32:18,124 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:32:32,920 - INFO - Sentiment analysis completed. Sample sentiments:
+                                                                                  headline  sentiment
+0                                                  Stocks That Hit 52-Week Highs On Friday        0.0
+1                                               Stocks That Hit 52-Week Highs On Wednesday        0.0
+2                                                            71 Biggest Movers From Friday        0.0
+3                                             46 Stocks Moving In Friday's Mid-Day Session        0.0
+4  B of A Securities Maintains Neutral on Agilent Technologies, Raises Price Target to $88        0.0
+2025-06-03 17:32:32,997 - INFO - Aggregated daily sentiment scores:
+  stock       date  sentiment
+0     A 2020-05-22   0.035714
+1     A 2020-05-26   0.000000
+2     A 2020-06-03   0.000000
+3     A 2020-06-05   0.000000
+4    AA 2020-05-18   0.062500
+2025-06-03 17:32:51,333 - INFO - Analyzing correlation for TSLA
+2025-06-03 17:32:51,362 - WARNING - Insufficient overlapping data for TSLA: 1 rows
+2025-06-03 17:32:51,365 - INFO - Analyzing correlation for NVDA
+2025-06-03 17:32:51,379 - INFO - NVDA correlation: 0.1757, p-value: 0.8243
+2025-06-03 17:32:52,094 - INFO - Analyzing correlation for META
+2025-06-03 17:32:52,111 - WARNING - Insufficient overlapping data for META: 0 rows
+2025-06-03 17:32:52,114 - INFO - Analyzing correlation for AMZN
+2025-06-03 17:32:52,135 - INFO - AMZN correlation: -1.0000, p-value: 1.0000
+2025-06-03 17:32:52,929 - INFO - Analyzing correlation for GOOG
+2025-06-03 17:32:52,950 - INFO - GOOG correlation: -0.0894, p-value: 0.8863
+2025-06-03 17:32:53,571 - INFO - Analyzing correlation for AAPL
+2025-06-03 17:32:53,598 - INFO - AAPL correlation: -1.0000, p-value: 1.0000
+2025-06-03 17:32:54,253 - INFO - Analyzing correlation for MSFT
+2025-06-03 17:32:54,269 - WARNING - Insufficient overlapping data for MSFT: 0 rows
+2025-06-03 17:33:11,758 - INFO - Saved correlation results to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\correlation_results.csv:
+      correlation   p_value
+NVDA     0.175714  0.824286
+AMZN    -1.000000  1.000000
+GOOG    -0.089449  0.886262
+AAPL    -1.000000  1.000000
+2025-06-03 17:33:12,000 - INFO - Task 3 completed. Plots saved in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\Plots-task3
+2025-06-03 17:36:49,863 - INFO - Starting Task 3: Correlation Analysis for TSLA, NVDA, META, AMZN, GOOG, AAPL, MSFT
+2025-06-03 17:37:44,772 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:37:44,775 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,776 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 17:37:44,779 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,780 - INFO - Falling back to CSV for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 17:37:44,803 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv. Sample returns: [nan, -0.0025114782580187844, -0.07847273575876412, -0.12568307167816883, -0.1609374805004331]
+2025-06-03 17:37:44,807 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:37:44,809 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,811 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 17:37:44,813 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,814 - INFO - Falling back to CSV for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 17:37:44,843 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv. Sample returns: [nan, 0.10476397730857312, -0.07759362018663041, -0.003110305828170734, -0.0031439708893237217]
+2025-06-03 17:37:44,846 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:37:44,848 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,849 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 17:37:44,852 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,854 - INFO - Falling back to CSV for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 17:37:44,872 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv. Sample returns: [nan, 0.023930378870117952, -0.050637404984623324, -0.0022379510308682127, 0.03588781624196846]
+2025-06-03 17:37:44,875 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:37:44,876 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,878 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 17:37:44,880 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,881 - INFO - Falling back to CSV for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 17:37:44,929 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv. Sample returns: [nan, -0.1170276933148997, -0.012040472256759527, -0.0426847245351647, -0.12739234329872395]
+2025-06-03 17:37:44,932 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:37:44,936 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,938 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 17:37:44,939 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,941 - INFO - Falling back to CSV for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 17:37:44,965 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv. Sample returns: [nan, 0.07942989417030355, 0.010063618023887111, -0.041407663328399846, 0.010775096815675678]
+2025-06-03 17:37:44,970 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:37:44,972 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,974 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 17:37:44,976 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:44,977 - INFO - Falling back to CSV for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 17:37:45,054 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv. Sample returns: [nan, -0.0521706112694712, -0.07339788355543386, 0.024750907585714632, 0.028992462021794507]
+2025-06-03 17:37:45,058 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:37:45,060 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:45,061 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 17:37:45,064 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:45,066 - INFO - Falling back to CSV for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 17:37:45,127 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv. Sample returns: [nan, 0.03571208520309299, 0.017250268592045703, -0.025431741040333633, -0.01739026074643546]
+2025-06-03 17:37:45,130 - INFO - Attempting to load news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:37:45,142 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl: invalid load key, '\x1f'.
+2025-06-03 17:37:45,144 - INFO - Falling back to CSV for news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 17:37:53,288 - INFO - Loaded news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Sample:
+      Unnamed: 0                                                                                 headline                                                                                                                                                url          publisher                date stock
+6680        7120                    Tech Stocks And FAANGS Strong Again To Start Day As Market Awaits Fed                           https://www.benzinga.com/government/20/06/16223418/tech-stocks-and-faangs-strong-again-to-start-day-as-market-awaits-fed         JJ Kinahan 2020-06-10 11:33:26  AAPL
+6681        7121                                            10 Biggest Price Target Changes For Wednesday                                 https://www.benzinga.com/analyst-ratings/price-target/20/06/16220539/10-biggest-price-target-changes-for-wednesday         Lisa Levin 2020-06-10 08:14:08  AAPL
+6682        7122  Benzinga Pro's Top 5 Stocks To Watch For Wed., Jun. 10, 2020: AAPL, BAC, NIO, SONO, GLW                https://www.benzinga.com/short-sellers/20/06/16220099/benzinga-pros-top-5-stocks-to-watch-for-wed-jun-10-2020-aapl-bac-nio-sono-glw  Benzinga Newsdesk 2020-06-10 07:53:47  AAPL
+6683        7123                        Deutsche Bank Maintains Buy on Apple, Raises Price Target to $350                                       https://www.benzinga.com/news/20/06/16219873/deutsche-bank-maintains-buy-on-apple-raises-price-target-to-350  Benzinga Newsdesk 2020-06-10 07:19:25  AAPL
+6684        7124  Apple To Let Users Trade In Their Mac Computers For Credit At US, Canada Stores: Report  https://www.benzinga.com/news/20/06/16218697/apple-to-let-users-turn-in-their-mac-computers-for-credit-at-us-canada-stores-starting-this-month-re      Neer Varshney 2020-06-10 06:27:11  AAPL
+2025-06-03 17:37:53,305 - INFO - News headlines per stock:
+stock
+AAPL    10
+AMZN    10
+GOOG    10
+NVDA    10
+TSLA    10
+2025-06-03 17:37:53,321 - INFO - Loaded stock data for 7 symbols: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 17:38:54,602 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:38:54,638 - INFO - Sentiment analysis completed. Sample sentiments:
+                                                                                     headline  sentiment
+6680                    Tech Stocks And FAANGS Strong Again To Start Day As Market Awaits Fed   0.433333
+6681                                            10 Biggest Price Target Changes For Wednesday   0.000000
+6682  Benzinga Pro's Top 5 Stocks To Watch For Wed., Jun. 10, 2020: AAPL, BAC, NIO, SONO, GLW   0.500000
+6683                        Deutsche Bank Maintains Buy on Apple, Raises Price Target to $350   0.000000
+6684  Apple To Let Users Trade In Their Mac Computers For Credit At US, Canada Stores: Report   0.000000
+2025-06-03 17:38:54,656 - INFO - Aggregated daily sentiment scores:
+  stock       date  sentiment
+0  AAPL 2020-06-09   0.088333
+1  AAPL 2020-06-10   0.166919
+2  AMZN 2020-06-09  -0.020833
+3  AMZN 2020-06-10   0.204798
+4  GOOG 2020-06-04   0.000000
+2025-06-03 17:41:28,183 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl
+2025-06-03 17:41:28,184 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,186 - INFO - Attempting to load stock data for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl
+2025-06-03 17:41:28,187 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,188 - INFO - Falling back to CSV for TSLA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv
+2025-06-03 17:41:28,213 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\TSLA_historical_data.csv. Date range: 2010-06-29 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,218 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl
+2025-06-03 17:41:28,222 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,225 - INFO - Attempting to load stock data for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl
+2025-06-03 17:41:28,227 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,230 - INFO - Falling back to CSV for NVDA from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv
+2025-06-03 17:41:28,272 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\NVDA_historical_data.csv. Date range: 1999-01-22 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,274 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl
+2025-06-03 17:41:28,276 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,277 - INFO - Attempting to load stock data for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl
+2025-06-03 17:41:28,279 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,282 - INFO - Falling back to CSV for META from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv
+2025-06-03 17:41:28,303 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\META_historical_data.csv. Date range: 2012-12-12 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,306 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl
+2025-06-03 17:41:28,307 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,308 - INFO - Attempting to load stock data for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl
+2025-06-03 17:41:28,309 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,310 - INFO - Falling back to CSV for AMZN from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv
+2025-06-03 17:41:28,342 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AMZN_historical_data.csv. Date range: 1997-05-15 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,345 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl
+2025-06-03 17:41:28,348 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,350 - INFO - Attempting to load stock data for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl
+2025-06-03 17:41:28,352 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,353 - INFO - Falling back to CSV for GOOG from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv
+2025-06-03 17:41:28,385 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\GOOG_historical_data.csv. Date range: 2004-08-19 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,389 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl
+2025-06-03 17:41:28,392 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,393 - INFO - Attempting to load stock data for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl
+2025-06-03 17:41:28,394 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,397 - INFO - Falling back to CSV for AAPL from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv
+2025-06-03 17:41:28,443 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\AAPL_historical_data.csv. Date range: 1980-12-12 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,447 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl
+2025-06-03 17:41:28,449 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_indicators.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,452 - INFO - Attempting to load stock data for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl
+2025-06-03 17:41:28,455 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_processed.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,457 - INFO - Falling back to CSV for MSFT from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv
+2025-06-03 17:41:28,495 - INFO - Loaded stock data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\MSFT_historical_data.csv. Date range: 1986-03-13 00:00:00 to 2024-07-30 00:00:00
+2025-06-03 17:41:28,498 - INFO - Attempting to load news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl
+2025-06-03 17:41:28,501 - ERROR - Error loading d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\processed_news_data.pkl: invalid load key, '\x1f'.
+2025-06-03 17:41:28,502 - INFO - Falling back to CSV for news from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv
+2025-06-03 17:41:37,171 - INFO - Raw news headline counts:
+stock
+NVDA    3146
+TSLA    1875
+GOOG    1199
+AAPL     441
+FB       380
+AMZN     278
+2025-06-03 17:41:38,077 - INFO - Filtered news data from d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\raw_analyst_ratings.csv. Sample:
+      Unnamed: 0                                                                                 headline                                                                                                                                                url          publisher                date stock
+6680        7120                    Tech Stocks And FAANGS Strong Again To Start Day As Market Awaits Fed                           https://www.benzinga.com/government/20/06/16223418/tech-stocks-and-faangs-strong-again-to-start-day-as-market-awaits-fed         JJ Kinahan 2020-06-10 11:33:26  AAPL
+6681        7121                                            10 Biggest Price Target Changes For Wednesday                                 https://www.benzinga.com/analyst-ratings/price-target/20/06/16220539/10-biggest-price-target-changes-for-wednesday         Lisa Levin 2020-06-10 08:14:08  AAPL
+6682        7122  Benzinga Pro's Top 5 Stocks To Watch For Wed., Jun. 10, 2020: AAPL, BAC, NIO, SONO, GLW                https://www.benzinga.com/short-sellers/20/06/16220099/benzinga-pros-top-5-stocks-to-watch-for-wed-jun-10-2020-aapl-bac-nio-sono-glw  Benzinga Newsdesk 2020-06-10 07:53:47  AAPL
+6683        7123                        Deutsche Bank Maintains Buy on Apple, Raises Price Target to $350                                       https://www.benzinga.com/news/20/06/16219873/deutsche-bank-maintains-buy-on-apple-raises-price-target-to-350  Benzinga Newsdesk 2020-06-10 07:19:25  AAPL
+6684        7124  Apple To Let Users Trade In Their Mac Computers For Credit At US, Canada Stores: Report  https://www.benzinga.com/news/20/06/16218697/apple-to-let-users-turn-in-their-mac-computers-for-credit-at-us-canada-stores-starting-this-month-re      Neer Varshney 2020-06-10 06:27:11  AAPL
+2025-06-03 17:41:38,081 - INFO - Filtered news headlines per stock:
+stock
+AAPL    10
+AMZN    10
+GOOG    10
+NVDA    10
+TSLA    10
+2025-06-03 17:41:38,086 - INFO - Loaded stock data for 7 symbols: ['TSLA', 'NVDA', 'META', 'AMZN', 'GOOG', 'AAPL', 'MSFT']
+2025-06-03 17:42:13,157 - INFO - Performing sentiment analysis on news headlines
+2025-06-03 17:42:13,197 - INFO - Sentiment analysis completed. Sample sentiments:
+                                                                                     headline  sentiment
+6680                    Tech Stocks And FAANGS Strong Again To Start Day As Market Awaits Fed   0.433333
+6681                                            10 Biggest Price Target Changes For Wednesday   0.000000
+6682  Benzinga Pro's Top 5 Stocks To Watch For Wed., Jun. 10, 2020: AAPL, BAC, NIO, SONO, GLW   0.500000
+6683                        Deutsche Bank Maintains Buy on Apple, Raises Price Target to $350   0.000000
+6684  Apple To Let Users Trade In Their Mac Computers For Credit At US, Canada Stores: Report   0.000000
+2025-06-03 17:42:13,216 - INFO - Aggregated daily sentiment scores:
+  stock       date  sentiment
+0  AAPL 2020-06-09   0.088333
+1  AAPL 2020-06-10   0.166919
+2  AMZN 2020-06-09  -0.020833
+3  AMZN 2020-06-10   0.204798
+4  GOOG 2020-06-04   0.000000
+2025-06-03 17:42:28,172 - INFO - Analyzing correlation for TSLA
+2025-06-03 17:42:28,206 - INFO - Overlapping data for TSLA: 1 rows
+        date  Daily_Return  sentiment
+0 2020-06-10      0.089702   0.037515
+2025-06-03 17:42:28,208 - ERROR - Error analyzing correlation for TSLA: `x` and `y` must have length at least 2.
+2025-06-03 17:42:28,210 - INFO - Analyzing correlation for NVDA
+2025-06-03 17:42:28,235 - INFO - Overlapping data for NVDA: 8 rows
+        date  Daily_Return  sentiment
+0 2020-06-01     -0.007802       0.00
+1 2020-06-02      0.002158       0.25
+2 2020-06-03     -0.006317       0.25
+3 2020-06-04     -0.000342       0.25
+4 2020-06-05      0.017510       0.25
+2025-06-03 17:42:28,241 - INFO - NVDA correlation: 0.1598, p-value: 0.7054
+2025-06-03 17:42:29,226 - INFO - Analyzing correlation for META
+2025-06-03 17:42:29,233 - WARNING - No sentiment data for META
+2025-06-03 17:42:29,235 - INFO - Analyzing correlation for AMZN
+2025-06-03 17:42:29,254 - INFO - Overlapping data for AMZN: 2 rows
+        date  Daily_Return  sentiment
+0 2020-06-09      0.030427  -0.020833
+1 2020-06-10      0.017913   0.204798
+2025-06-03 17:42:29,256 - INFO - AMZN correlation: -1.0000, p-value: 1.0000
+2025-06-03 17:42:30,211 - INFO - Analyzing correlation for GOOG
+2025-06-03 17:42:30,231 - INFO - Overlapping data for GOOG: 5 rows
+        date  Daily_Return  sentiment
+0 2020-06-04     -0.016848   0.000000
+1 2020-06-05      0.018560  -0.051852
+2 2020-06-08      0.005715   0.139394
+3 2020-06-09      0.006602   0.066667
+4 2020-06-10      0.006655   0.011111
+2025-06-03 17:42:30,236 - INFO - GOOG correlation: -0.0894, p-value: 0.8863
+2025-06-03 17:42:31,308 - INFO - Analyzing correlation for AAPL
+2025-06-03 17:42:31,319 - INFO - Overlapping data for AAPL: 2 rows
+        date  Daily_Return  sentiment
+0 2020-06-09      0.031578   0.088333
+1 2020-06-10      0.025728   0.166919
+2025-06-03 17:42:31,321 - INFO - AAPL correlation: -1.0000, p-value: 1.0000
+2025-06-03 17:42:31,884 - INFO - Analyzing correlation for MSFT
+2025-06-03 17:42:31,888 - WARNING - No sentiment data for MSFT
+2025-06-03 17:42:47,620 - INFO - Saved correlation results to d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\data\correlation_results.csv:
+      correlation   p_value
+NVDA     0.159802  0.705433
+AMZN    -1.000000  1.000000
+GOOG    -0.089449  0.886262
+AAPL    -1.000000  1.000000
+2025-06-03 17:42:47,874 - INFO - Task 3 completed. Plots saved in d:\Documents\Projects\10 Academy\Stock Market\financial-news-analysis\Plots-task3
